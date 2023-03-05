@@ -1,0 +1,70 @@
+{% extends 'layout.html' %}
+{% block ourpage %}
+  <div id="particles-js" style="background: black; position: absolute; width: 100%; height: 100%; margin-top: -3.5rem;">
+    <canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;"></canvas>
+  </div>
+  <div class="content text-white text-center max-w-screen-md mx-auto mt-40" style="position: relative">
+    <h1 style="z-index: 10" class="text-7xl font-bold mb-8"><span class="text-blue-200">Diet</span>betes</h1>
+    <h3 style="z-index: 10" class="text-2xl font-semibold mb-8">A revolutionary platform for easy, fast organization for Diabetes diets.</h3>
+    <div class="flex font-semibold text-lg space-x-8 justify-center">
+     <a href="/login" class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100"><p>Start Now!</p></a>
+      <!-- <a href="/login" class="px-8 py-4 rounded-md bg-transparent border-blue-200 border-2 text-blue-200 hover:bg-blue-200 hover:text-black hover:opacity-80"><p>Log In</p></a> -->
+    <!-- make it so that when u arent signed it it says login and says start now if your already signed in -->
+    
+    </div>
+  </div>
+  <div class="mt-56 max-w-screen-xl mx-auto px-12">
+    <div style="padding-top: 350px">
+    <h2 class="text-3xl text-center font-bold">The next revolution in Diabetes diet organization is <span class="text-blue-600">here</span>.</h2>
+    <p class="text-lg text-gray-500 max-w-screen-lg mx-auto my-8 mb-12">
+      Diabetes is a chronic disease that affects the body's ability to produce or use insulin effectively. When children are diagnosed with diabetes, it can be a big issue for several reasons:
+
+Prevalence: The incidence of diabetes in children is increasing globally. According to the World Health Organization, the number of children with type 1 diabetes is increasing by 3% each year.
+
+Serious health risks: Diabetes can cause serious health complications if not properly managed, including cardiovascular disease, kidney damage, and nerve damage. Children with diabetes are also at higher risk of developing infections and experiencing vision problems.
+
+Lifestyle changes: Managing diabetes requires significant lifestyle changes, including following a healthy diet, engaging in regular exercise, monitoring blood sugar levels, and taking insulin or other medications. These changes can be challenging for children and their families to navigate.
+
+Emotional impact: Children with diabetes may feel isolated or different from their peers, leading to emotional and social challenges. They may also experience anxiety or depression related to managing their condition.
+
+Financial burden: Diabetes can be expensive to manage, with costs including medications, supplies, and regular medical appointments. This can create a financial burden for families, particularly those without adequate health insurance.
+
+Overall, diabetes in children is a big issue because it can have serious health consequences and requires significant lifestyle changes and management. It is important for children with diabetes to receive appropriate medical care and support to manage their condition effectively. 
+    </p>
+    </div>    
+        <style>
+          .colparts {
+            flex: 50%;
+            max-width: 50%;
+            padding: 0 10px;
+          }
+
+          .colparts img {
+            margin-top: 8px;
+            vertical-align: middle;
+            max-width: 100%;
+            height: 10vh;
+          }
+
+          .row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+          }
+          </style>
+    <p class="text-sm text-center text-gray-600 max-w-screen-lg mx-auto mb-16">Created by Ryan Park.</p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    var request = new XMLHttpRequest();
+    request.open("GET","static/js/particles.json", false);
+    request.send(null);
+    var jsonData = JSON.parse(request.responseText);
+    particlesJS('particles-js', jsonData, function(){
+        console.log("particles.json loaded...");
+    });
+  </script>
+{% endblock %}

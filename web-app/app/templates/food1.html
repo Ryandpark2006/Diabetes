@@ -1,0 +1,213 @@
+{% extends 'layout.html' %}
+{% block ourpage %}
+<html>
+  
+<head>
+    <style>
+        table {
+            border-collapse: collapse;
+            background: white;
+            color: black;
+        }
+          
+        th,
+        td {
+            font-weight: bold;
+        }
+        
+        h2 {
+            font-weight: bold;
+        }
+    </style>
+</head>
+  
+<body>
+    <!-- Here we are using attributes like
+        cellspacing and cellpadding -->
+  
+    <!-- The purpose of the cellpadding is 
+        the space that a user want between
+        the border of cell and its contents-->
+  
+    <!-- cellspacing is used to specify the 
+        space between the cell and its contents -->
+    <div style="width: 100%; display: table;">
+        <div style="display: table-row">
+            <div style="width: 600px; display: table-cell;"> 
+                <div style = "left:-500; color:black;">
+                    <h2>Meal Plan</h2>
+                    <br>
+                <h3>Breakfast:</h3>
+                <ul>
+                    <li>One cup blueberries</li>
+                    <li>two-egg veggie omelet with spinach</li>
+                    <li>mushrooms</li>
+                    <li>bell pepper</li>
+                    <li>avocado</li>
+                    <li>half a cup of black beans</li>
+                </ul>
+                <br>
+            
+                <h3>Lunch:</h3>
+                <ul>
+                    <li>Two regular slices 100% whole wheat bread</li>
+                    <li>1 tbsp plain Greek nonfat yogurt</li>
+                    <li>1 tbsp mustard</li>
+                    <li>3 oz canned tuna in water mixed with a quarter cup of shredded carrots</li>
+                    <li>1 tbsp dill relish</li>
+                    <li>1 cup sliced tomato</li>
+                    <li> half a medium apple</li>
+                </ul>
+                <br>
+            
+            
+                <h3>Snack:</h3>
+                <ul>
+                    <li>1 cup unsweetened kefir</li>
+                </ul>
+                <br>
+            
+            
+                <h3>Dinner:</h3>
+                <ul>
+                    <li>Half a cup succotash</li>
+                    <li>1.5 oz cornbread</li>
+                    <li>1 tsp butter</li>
+                    <li>3 oz pork tenderloin</li>
+                    <li>1 cup cooked asparagus</li>
+                    <li>half a cup fresh pineapple</li>
+                </ul>
+            
+                <br>
+            
+                <h3>Snack:</h3>
+                <ul>
+                    <li>Twenty peanuts</li>
+                    <li>1 cup carrots</li>
+                </ul>
+            
+                </br>
+            
+                </div>
+            </div>
+            <div style="display: table-cell;"> 
+                <h2 align="center" style="color: orange;">
+                    March 2023
+                </h2>
+                <br />
+              
+                <table bgcolor="lightgrey" align="center" 
+                    cellspacing="21" cellpadding="21">
+              
+                    <!-- The tr tag is used to enter 
+                        rows in the table -->
+              
+                    <!-- It is used to give the heading to the
+                        table. We can give the heading to the 
+                        top and bottom of the table -->
+              
+                    <caption align="top">
+                        <!-- Here we have used the attribute 
+                            that is style and we have colored 
+                            the sentence to make it better 
+                            depending on the web page-->
+                    </caption>
+              
+                    <!-- Here th stands for the heading of the
+                        table that comes in the first row-->
+              
+                    <!-- The text in this table header tag will 
+                        appear as bold and is center aligned-->
+              
+                    <thead>
+                        <tr>
+                            <!-- Here we have applied inline style 
+                                 to make it more attractive-->
+                            <th style="color: white; background: purple;">
+                                Sun</th>
+                            <th style="color: white; background: purple;">
+                                Mon</th>
+                            <th style="color: white; background: purple;">
+                                Tue</th>
+                            <th style="color: white; background: purple;">
+                                Wed</th>
+                            <th style="color: white; background: purple;">
+                                Thu</th>
+                            <th style="color: white; background: purple;">
+                                Fri</th>
+                            <th style="color: white; background: purple;">
+                                Sat</th>
+                        </tr>
+                    </thead>
+              
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <!-- <td>1</td> -->
+                            <td class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100"><a href="/food" >1</a></td>
+                            <td class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100"><a href="/food1" >2</a></td>
+                        </tr>
+                        <tr></tr>
+                        <tr>
+                            <td class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100">3</td>
+                            <td class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100">4</td>
+                            <td class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100">5</td>
+                            <td class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100">6</td>
+                            <td class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100">7</td>
+                            <td class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100">8</td>
+                            <td class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100">9</td>
+                        </tr>
+                        <tr>
+                            <td class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100">10</td>
+                            <td class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100">11</td>
+                            <td class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100">12</td>
+                            <td class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100">13</td>
+                            <td class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100">14</td>
+                            <td class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100">15</td>
+                            <td class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100">16</td>
+                        </tr>
+                        <tr>
+                            <td class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100">17</td>
+                            <td class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100">18</td>
+                            <td class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100">19</td>
+                            <td class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100">20</td>
+                            <td class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100">21</td>
+                            <td class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100">22</td>
+                            <td class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100">23</td>
+                        </tr>
+                        <tr>
+                            <td class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100">24</td>
+                            <td class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100">25</td>
+                            <td class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100">26</td>
+                            <td class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100">27</td>
+                            <td class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100">28</td>
+                            <td class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100">29</td>
+                            <td class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100">30</td>
+                        </tr>
+                        <tr>
+                            <td class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100">31</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    </br>
+    
+   
+</body>
+  
+</html>
+
+{% endblock %}
+<!-- <td href="/predictions" class="px-8 py-4 rounded-md bg-blue-200 text-black hover:opacity-80 opacity-100">2</td> -->
